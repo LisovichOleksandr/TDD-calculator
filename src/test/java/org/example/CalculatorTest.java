@@ -17,4 +17,15 @@ public class CalculatorTest extends TestCase {
         Assert.assertEquals(7, result);
     }
 
+    @Test
+    public void test_div() {
+        // Arrange
+        Calculator calculator = new Calculator();
+
+        // Act
+        int result = calculator.div(6, 2);
+
+        // Assert
+        Assert.assertEquals(3, result);
+    }
 }
